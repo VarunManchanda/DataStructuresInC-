@@ -7,7 +7,7 @@ class Node{
     Node *left;
     Node *middle;
     Node *right;
-    int value;
+    long long int value;
 };
 
 Node * makeNode(char w){
@@ -21,40 +21,39 @@ Node * makeNode(char w){
 
 Node *root = NULL;
 
-Node * putItem(Node *, string, int);
+Node * putItem(Node *, string, long long int, int);
 Node * getItem(Node *, string, int);
 
-Node * put(string key){
-    root = putItem(root, key, 0);
+Node * put(string key, long long int value){
+    root = putItem(root, key, value, 0);
     return root;
 }
 
-Node * putItem(Node *root, string key,int index){
+Node * putItem(Node *root, string key, long long int value, int index){
     char c = key[index];
 
     if(root==NULL){
         root = makeNode(c);
     }
     if(c < root->word){
-        root->left = putItem(root->left, key, index);
+        root->left = putItem(root->left, key, value, index);
     }
     else if(c > root->word){
-        root->right = putItem(root->right, key, index);
+        root->right = putItem(root->right, key, value, index);
     }
     else if(index < key.length() - 1){
-        root->value += 1;
-        root->middle = putItem(root->middle, key, index + 1);
+        root->middle = putItem(root->middle, key, value, index + 1);
     }
     else{
-        root->value += 1 ;
+        root->value = value;
     }
     return root;
 }
 
-int get(string key){
+long long int get(string key){
     Node *n = getItem(root, key, 0);
     if(n==NULL){
-        return 0;
+        return -1;
     }
     return n->value;
 }
@@ -82,14 +81,9 @@ Node * getItem(Node *root, string key, int index){
 
 int main(){
 
-    root = put("aab");
-    root = put("abcde");
-    root = put("aabcd");
-    cout<<get("ab");
-    
-
-
-
-
+    root = put("car", 200);
+    root = put("hack", 100);
+    root = put("road", 100);
+    cout<<get("car")<<endl;
     return 0;
 }
