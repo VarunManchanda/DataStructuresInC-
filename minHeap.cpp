@@ -91,23 +91,8 @@ class Heap{
 
 int main(){
     //btw you can use priority_queue<int, vector<int>, greater<int>> heap;
-    //.top(), .pop(), push(), .size();
-    //int arr[] = {3554,2227, 8866, 9890, 212 ,8669 ,2423, 7651 ,3878, 3379, 1419, 6134, 5767, 859, 2848, 9309,1449, 8408, 8041, 3367 ,6676, 6382 ,4136, 4871};
+    //.top(), .pop(), push(), .size()
     Heap *h = new Heap();
-    // for(int i: arr){
-    //     h->insert(i);
-    // }
-    // int k = 47245;
-    // int count = 0;
-    // while(h->size() > 1 && h->peek()< k){
-    //     count += 1;
-    //     int i = h->peek();
-    //     h->poll();
-    //     int j = h->peek();
-    //     h->poll();
-    //     h->insert(i + 2*j);
-    // }
-    // cout<<count<<endl;
     h->insert(1);
     h->insert(3);
     h->insert(2);
