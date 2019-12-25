@@ -8,6 +8,7 @@ It contains DataStructures like
 5) Tries
 6) Heap (Min Heap and Max Heap)
 7) Graphs
+8) Sorting Algorithms
 
 
 Note:- Along with all operations that you can perform on them like insertion, deletion, in fact removal of specific node value from heaps.
