@@ -7,7 +7,7 @@ It contains DataStructures like
 4) Trees(Binary Tree, BST, AVL Tree)
 5) Tries
 6) Heap (Min Heap and Max Heap)
-7) Graphs
+7) Graphs (BFS, DFS, Prims, Kruskal, Dijkstra)
 8) Sorting Algorithms
 
 
