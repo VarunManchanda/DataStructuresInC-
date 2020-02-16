@@ -9,6 +9,7 @@ It contains DataStructures like
 6) Heap (Min Heap and Max Heap)
 7) Graphs (BFS, DFS, Prims, Kruskal, Dijkstra)
 8) Sorting Algorithms
-
+9) Advance Data Structures(Segment Tree, Fenwick Tree)
+10) Strings(KMP)
 
 Note:- Along with all operations that you can perform on them like insertion, deletion, in fact removal of specific node value from heaps.
