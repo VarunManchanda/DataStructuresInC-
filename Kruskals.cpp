@@ -96,7 +96,7 @@ void kruskalAlgo(Edge *input, int nodes, int edges)
             total_min_distance += ouput[i].weight;
         }
     }
-    cout << "Total Min Distance is " << total_min_distance << endl;
+    cout << "Total Minimum Distance taken is " << total_min_distance << endl;
     //free space
     delete[] ouput;
     delete[] parent;
