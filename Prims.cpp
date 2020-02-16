@@ -24,8 +24,8 @@ using namespace std;
 
 
 */
-//compile it using g++ Prims.cpp -o prim -std=c++11
-//run it as ./prim and paste this below test case
+//compile it using g++ Prims.cpp -o prims -std=c++11
+//run it as ./prims and paste this below test case
 /*run this test case
 5 7 
 0 1 4
@@ -50,7 +50,7 @@ void printMatrix(vector<vector<int>> adjMatrix)
     }
 }
 
-int findMinVertex(int *visited, int *weight, int nodes)
+int findMinVertex(bool *visited, int *weight, int nodes)
 {
     int minVertex = -1;
     for(int i=0; i<nodes; i++)
@@ -67,7 +67,7 @@ int findMinVertex(int *visited, int *weight, int nodes)
 void primsAlgo(vector<vector<int>> adjMatrix, int nodes)
 {
     int *parent = new int[nodes];
-    int *visited = new int[nodes];
+    bool *visited = new bool[nodes];
     int *weight = new int[nodes];
     for(int i=0; i<nodes; i++)
     {
