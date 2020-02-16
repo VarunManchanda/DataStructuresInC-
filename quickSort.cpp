@@ -3,12 +3,12 @@ using namespace std;
 
 int partition(int a[], int s, int e)
 {
-	int i = s-1; // i belongs to small region
-	int j = s;
+	int i = s-1; // i belongs to small region initially i --> -1
+	int j = s; //initially j--> 0
 	int pivot = a[e];
 	for(;j<e;j++)
 	{
-		if(a[j]<=pivot) // if small element is founded, then increase small region and swap that element
+		if(a[j]<=pivot) // if small element is found, then increase small region and swap that element
 		{
 			i++;
 			swap(a[i],a[j]);
