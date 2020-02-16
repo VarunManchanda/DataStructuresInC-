@@ -87,12 +87,12 @@ void kruskalAlgo(Edge *input, int nodes, int edges)
     {
         if(ouput[i].source < ouput[i].dest)
         {
-            cout << ouput[i].source << " " << ouput[i].dest << " weight " << ouput[i].weight << endl;
+            cout << ouput[i].source << " " << ouput[i].dest << " " << ouput[i].weight << endl;
             total_min_distance += ouput[i].weight;
         }
         else
         {
-            cout << ouput[i].dest << " " << ouput[i].source << " weight " << ouput[i].weight << endl;
+            cout << ouput[i].dest << " " << ouput[i].source << " " << ouput[i].weight << endl;
             total_min_distance += ouput[i].weight;
         }
     }
