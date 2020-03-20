@@ -20,8 +20,8 @@ using namespace std;
 #define eb(x) emplace_back(x)
 #define gcd(a,b) __gcd(a,b)
 #define count_ones(x) __builtin_popcount(x)
-
-
+#define _for(k,s,e,inc) for(auto k=s; k<e; k+=inc)
+#define _forr(k,s,e,dec) cor(auto k=s, k>=e; k-=dec)
 
 
 
